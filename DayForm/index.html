@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DayForm Wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav role="navigation">Practice Log</nav>
+    <main role="main">
+        <div class="required_box">
+            <h1>Practice Day #___</h1>
+            <h2>Tue Apr __</h2>
+  
+            <label for="completed">Did you practice today?</label>
+            <select
+              onChange=""  name="completed"
+              id="completed"
+              required
+            >
+              <option value="false">No. :-(</option>
+              <option value="true">Yes!!!</option>
+            </select>
+          </div>
+            <section>
+              <div>
+                <label for="actual_hours">How Many Hours?</label>
+                <input
+                  type="number"
+                  name="actual_hours"
+                  id="actual_hours"
+                  value=""
+                  onChange=""
+                />
+              </div>
+              <div class="optional_box">
+                <p class="italics">Optional:</p>
+                <div>
+                  <label for="technique">Technique:</label>
+                  <input
+                    type="text"
+                    name="technique"
+                    id="technique"
+                    placeholder="ex. Hanon No. 1"
+                    value=""
+                    onChange=""
+                  />
+                </div>
+                <div>
+                  <label for="repertoire">Repertoire:</label>
+                  <input
+                    type="text"
+                    name="repertoire"
+                    id="repertoire"
+                    value=""
+                    onChange=""
+                  />
+                </div>
+              </div>
+            </section>
+          
+          <div class="DayForm__buttons">
+            <button type="button" onClick={this.props.onClickCancel}>
+              Cancel
+            </button>
+            <button type="submit">Save</button>
+          </div>
+        </form>
+    </main>
+    <footer role="content-info">Footer</footer>
+  </body>
+</html>
