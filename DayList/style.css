@@ -55,7 +55,14 @@ footer {
   height: 150px;
   margin-bottom: 10px;
 }
+.completedbox {
+  background-color: #aaa;
+}
 
 p {
   font-size: 10px;
+}
+
+a {
+  font-size: 12px;
 }
